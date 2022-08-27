@@ -6,7 +6,6 @@ import { useMutation } from "@apollo/client";
 import { ADD_POST } from "../query/addPost";
 import Comments from "../Comments/comments";
 import VoteForPost from "../VoteForPost/vote";
-import Search from "../Search/search";
 
 const FeedPage = () => {
   const token = sessionStorage.getItem("ACCESS_TOKEN");
@@ -55,7 +54,6 @@ const FeedPage = () => {
               );
             })}
         </div>
-        <Search></Search>
       </div>
       {isNeedToOpenModal && (
         <div className={style.overlay}>
